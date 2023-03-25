@@ -1,0 +1,45 @@
+#shop{
+    width:100%;
+    height:2000px;
+
+}
+#shop>#main-clothes{
+    width:1200px;
+    height:1100px;
+    margin:0 auto;
+    
+
+}
+#shop>#main-clothes>#main-clothes-header{
+    width:100%;
+    height:80px;
+    background-color: black;
+    color:white;
+    padding-top: 18px;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+#shop>#main-clothes>#main-clothes-img>img{
+    width:100%;
+    height:100%;
+    margin-top: 30px;
+}
+#shop>#p{
+
+    margin-top: 50px;
+    text-align: center;
+}
+#shop>#p>p{
+    font-size: 12px;
+
+}
+#shop>#clothes-list{
+    width:100%;
+    height:1400px;
+
+    margin-top: 50px;
+}

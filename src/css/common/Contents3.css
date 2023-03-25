@@ -1,0 +1,14 @@
+#cont3{
+    width:100%;
+    height:1200px;
+
+}
+
+
+
+#cont3>img{
+    width:50%;
+    height:1050px;
+    float:left;
+    margin-top: 100px;
+}

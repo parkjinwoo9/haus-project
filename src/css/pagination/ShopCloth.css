@@ -1,0 +1,23 @@
+
+
+#shop-cloth{
+    width:400px;
+    height:600px;
+
+    float:left;
+    margin-left: 60px;
+    margin-top:40px;
+}
+#shop-cloth>img{
+    width:400px;
+    height:550px;
+}
+#shop-cloth>img:hover{
+    opacity:0.7;
+}
+#shop-cloth>p{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    color:black;
+}

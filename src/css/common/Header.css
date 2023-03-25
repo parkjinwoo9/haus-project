@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*헤더 틀*/
+#header{
+    width:100%;
+    height:250px;
+    background-color:white;
+}
+#header>#header-left{
+    width:20%;
+    height:50px;
+    float:left;
+}
+#header>#header-center{
+    width:50%;
+    height:30%;
+    position: relative;
+    z-index:999;
+    margin:0 auto;
+
+}
+#header>#header-center>a>img{
+    width:382px;
+    height:107;
+    margin:0 auto;
+}
+#header>#header-right{
+    width:400px;
+    height:100px;
+    float:right;
+    position: relative;
+    top:-50px
+}
+
+
+/*left*/
+#header>#header-left{
+    margin-top:40px;
+}
+
+.menu>ul>li>a{
+    margin-left:20px;
+    font-size:13px;
+    float:left;
+    position: relative;
+    z-index:999;
+
+}
+
+#header>#header-left>.menu>ul>#menu-wrap{
+    width:100%;
+    height:450px;
+    background-color:white;
+    opacity:0.7;
+    float:left;
+    position: absolute;
+    z-index:10;
+    /* border-bottom: 3px solid black; */
+    margin:0 auto;
+    box-sizing: border-box;
+    display:none;
+}
+
+#menu-wrap>div{
+    position: relative;
+    top:250px;
+    left:670px;
+}
+#header>#header-left>.menu>ul>li>a{
+    color:black;
+}
+#header>#header-left>.menu>ul>li>a:hover{
+    text-decoration: underline;
+
+}
+
+
+.bold{
+    font-weight: bold;
+}
+#menu-wrap>div>li>a{
+    font-size:12px;
+    color:black;
+}
+
+
+.shop{
+    margin:0 auto;
+    float:left;
+    position: fixed;
+
+}
+.shop>span{
+    cursor: pointer;
+}
+
+.collection{
+    margin:0 auto;
+    float:left;
+    margin-left:150px;
+    position: fixed;
+
+}
+.journal{
+    float:left;
+    margin:0 auto;
+    margin-left:150px;
+    position: fixed;
+
+}
+
+#header>#header-left>.menu>ul>li>a{
+    cursor:pointer;
+}
+
+
+
+
+/*center*/
+#header>#header-center{
+    text-align: center;
+    box-sizing: border-box;
+}
+#header>#header-center>#logo{
+    font-size:150px;
+    text-align: center;
+    position: relative;
+    top:-40px;
+}
+
+
+/*right*/
+#header>#header-right>#header-util{
+    width:50%;
+    height:100%;
+    
+    float:right;
+}
+#header>#header-right>#header-util>a>img{
+    width:13px;
+    height:13px;
+    float:left;
+    margin-left:25px;
+    position: relative;
+    z-index:999;
+    padding-right:1px;
+}
+
+#header>#header-right>#header-util>img{
+    width:13px;
+    height:13px;
+    float:left;
+    margin-left:25px;
+    position: relative;
+    z-index:999;
+    padding-right:1px;
+    cursor:pointer;
+}
+
+/*바뀐 헤더*/
+#header.active{
+    width:100%;
+    height:70px;
+    position: fixed;
+    opacity: 0.7;
+    box-sizing: border-box ;
+    transition:all 0.2s ease;
+    z-index:999;
+}
+#header.active>#header-center>a>img{
+    width:100px;
+    height:40px;
+    padding-top: 15px;
+
+}
+#header.active>#header-left>.menu>ul>li>a{
+    display: none;
+}
+#header.active>#header-right>#header-util>.search{
+    display:none;
+}
+#header.active>#header-right>#header-util{
+    margin-top: -10px;
+}
+
+#header>#header-left>#toggleBtn>img{
+    width:50px;
+    height:50px;
+    position:relative;
+    top:-30px;
+    display:none;
+}
+
+
+/*반응형*/
+@media screen and (max-width:1080px){
+    #header>#header-left>.menu{
+        display: none;
+    }
+    #header>#header-right>#header-util{
+        display: none;
+    }
+    #header>#header-left>#toggleBtn>img{
+        display:flex;
+    }
+    #header>#header-center>a>img{
+        width:120px;
+        height:50px;
+        margin-top:10px;
+    }
+}
+
+
+.toggleMenus{
+    width:200px;
+    height:3000px;;
+    background-color: white;
+    opacity:0.7;
+    position: absolute;
+    top:0px;
+    z-index:999;
+    border-right: 1px solid black;
+}
+.out{
+    width:50px;
+    height:50px;
+    float:right;
+    margin-right:5px;
+    cursor:pointer;
+    font-size:50px;
+    text-align: center;
+    position: relative;
+    z-index:1001;
+}
+.toggle_menu{
+    width:200px;
+    height:50px;
+    position:relative;
+    top:100px;
+    margin-bottom:10px;
+    border-bottom:2px solid black;
+
+}
+.toggle_menu>a{
+    margin-left:10px;
+    color:black;
+    font-weight: bold;
+}

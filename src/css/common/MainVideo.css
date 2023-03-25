@@ -1,0 +1,13 @@
+#main-video{
+    width:100%;
+    height:800px;
+    margin:0 auto;
+
+
+}
+#main-video>#video-wrapper{
+    margin:0 auto;
+    position: relative;
+    text-align: center;
+
+}
